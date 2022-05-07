@@ -117,10 +117,11 @@ def gui_update(b):
                         b[i][j]['bg'] = 'SystemButtonFace'
                         b[i][j]['bd'] = 0
                         continue
+                    b[i][j]['text'] = x
                 else:
                     fg = "black"
+                    b[i][j]['text'] = arranged_board[j][i]
                 #b[i][j]['text'] = arranged_board[j][i]
-                b[i][j]['text'] = x
                 b[i][j]['fg'] = fg
                 b[i][j]['bg'] = 'SystemButtonFace'
                 b[i][j]['bd'] = 2
