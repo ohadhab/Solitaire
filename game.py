@@ -21,7 +21,7 @@ def chose_card(i, j):
 def chose_where(i, j, arranged_board):
     if globals.chosen_one == [i, j]:
         return  # cancel move
-    if i > 1 and globals.chosen_one[1] == j:
+    if i > 1 and globals.chosen_one[0] > 1 and globals.chosen_one[1] == j:
         return  # cancel move
     card1, card2 = get_cards(i, j, arranged_board)
     card1[1] = reverse_names(card1[1])
